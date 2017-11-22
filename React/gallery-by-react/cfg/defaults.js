@@ -44,10 +44,10 @@ function getDefaultModules() {
         test: /\.styl/,
         loader: 'style-loader!css-loader!stylus-loader'
       },
-      // {
-      //   test: /\.json$/,
-      //   loader: 'json-loader'
-      // },
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
+      },
       {
         test: /\.(png|jpg|gif|woff|woff2)$/,
         loader: 'url-loader?limit=8192'
@@ -57,12 +57,12 @@ function getDefaultModules() {
         loader: 'file-loader'
       }
     ],
-    rules: [
-      {
-        test: /\.json$/,
-        use: 'json-loader'
-      }
-    ]
+    // rules: [
+    //   {
+    //     test: /\.json$/,
+    //     use: 'json-loader'
+    //   }
+    // ]
   };
 }
 
